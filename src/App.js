@@ -23,13 +23,14 @@ import Menu from './Features/Auth/Menu';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Menu />} />
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Login />} />
+        <Route path='menu' element={<Menu />} />
 
-        <Route path="admin" element={<AdminNavbar />}>
+        <Route path='admin' element={<AdminNavbar />}>
           <Route index element={<AdminDashboard />} />
-          <Route path="accounts" element={<AdminAccounts />} />
-          <Route path="work-order" element={<AdminWorkOrder />} />
+          <Route path='accounts' element={<AdminAccounts />} />
+          <Route path='work-order' element={<AdminWorkOrder />} />
         </Route>
 
         <Route path='manager' element={<ManagerNavbar />}>
