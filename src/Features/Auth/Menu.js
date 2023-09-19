@@ -8,22 +8,22 @@ function Menu() {
                 <div className='login-form-container'>
                     <h1> EMPnet System Login </h1>
                     <form action='' className='login-form'>
-                        <NavLink to='/admin'>
+                        <NavLink to='/login'>
                             <button className='login-button' type='submit'>
                                 Admin
                             </button>
                         </NavLink>
-                        <NavLink to='/manager'>
+                        <NavLink to='/manager-login'>
                             <button className='login-button' type='submit'>
                                 Manager
                             </button>
                         </NavLink>
-                        <NavLink to='/employee'>
+                        <NavLink to='/employee-login'>
                             <button className='login-button' type='submit'>
                                 Employee
                             </button>
                         </NavLink>
-                        <NavLink to='/client'>
+                        <NavLink to='/client-login'>
                             <button className='login-button' type='submit'>
                                 Client
                             </button>

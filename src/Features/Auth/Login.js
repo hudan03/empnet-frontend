@@ -77,7 +77,7 @@ const Login = () => {
                                 type='password' placeholder='Your Password' id='password' name='password' />
                         </div>
 
-                        <NavLink to='/menu'>
+                        <NavLink to='/admin'>
                             <button className='login-button' type='submit'>
                                 Login
                             </button>

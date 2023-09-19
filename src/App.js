@@ -19,13 +19,19 @@ import EmployeeDashboard from './Features/Employee/EmployeeDashboard';
 import EmployeeWO from './Features/Employee/EmployeeWO';
 import './App.css';
 import Menu from './Features/Auth/Menu';
+import ManagerLogin from './Features/Auth/ManagerLogin';
+import ClientLogin from './Features/Auth/ClientLogin';
+import EmployeeLogin from './Features/Auth/EmployeeLogin';
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<Login />} />
-        <Route path='menu' element={<Menu />} />
+        <Route index element={<Menu />} />
+        <Route path='login' element={<Login />} />
+        <Route path='manager-login' element={<ManagerLogin />} />
+        <Route path='client-login' element={<ClientLogin />} />
+        <Route path='employee-login' element={<EmployeeLogin />} />
 
         <Route path='admin' element={<AdminNavbar />}>
           <Route index element={<AdminDashboard />} />
