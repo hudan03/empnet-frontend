@@ -1,0 +1,35 @@
+body {
+    background: #eee;
+}
+
+#side_nav {
+    background: #025464;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#links {
+    text-decoration: none!important;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar li a {
+    color: #F8F1F1;
+}
+
+.sidebar .active li {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar .active li a {
+    color: #025464;
+}
+
+.sidebar li a:hover {
+    color: #9DB2BF;
+}
