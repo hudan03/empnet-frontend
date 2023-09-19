@@ -66,7 +66,8 @@ function AdminAccounts() {
         setData(response.data);
     }
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         try {
             await api.post('/users', values);
         } catch (error) {
